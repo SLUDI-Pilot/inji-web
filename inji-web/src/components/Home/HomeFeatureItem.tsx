@@ -9,7 +9,7 @@ export const HomeFeatureItem: React.FC<HomeFeatureItemProps> = (props) => {
 
   return (
     <div data-testid={"HomeFeatureItem" + props.itemno + "-Container"} className="bg-gray-50 p-7 max-w-96 shadow-sm">
-      <img data-testid={"HomeFeatureItem" + props.itemno + "-Image"} src={require("../../assets/FeatureItem" + props.itemno + ".svg")} alt="feature item" />
+      <img data-testid={"HomeFeatureItem" + props.itemno + "-Image"} src={require("../../assets/FeatureItem" + props.itemno + ".png")} alt="feature item" className="w-12 h-12" />
       <div data-testid={"HomeFeatureItem" + props.itemno + "-Heading"} className="font-semibold text-black text-xl text-wrap py-7">
         {t("FeatureItem" + props.itemno + ".heading")}
       </div>
