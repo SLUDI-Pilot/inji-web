@@ -15,7 +15,7 @@
         --iw-color-title: #000000;
         --iw-color-subTitle: #717171;
         --iw-color-searchTitle: #3E3E3E;
-        --iw-color-primary: #FF5300;
+        --iw-color-primary: #005ABC;
         --iw-color-secondary: #5B03AD;
         --iw-color-lightPrimary: #fff1eb;
         --iw-color-lightSecondary: #f2ebf8;
@@ -99,7 +99,7 @@
         opacity: 1;
     }
     .bg-home-banner {
-        background-image: url('./assets/HomeBanner.png');
+        background-image: url('./assets/HomeBanner2.png');
         background-size: 100% 100%;
         background-position: center;
     }

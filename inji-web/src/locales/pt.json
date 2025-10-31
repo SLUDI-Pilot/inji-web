@@ -16,7 +16,7 @@
       "buttontext":"Comece"
     },
     "Features":{
-      "heading":"Recursos da Inji Wallet",
+      "heading":"Recursos da e-Locker",
       "description1":"Gerenciamento seguro e sem complicações de credenciais verificáveis",
       "description2":"para interações digitais confiáveis."
     },
@@ -51,7 +51,7 @@
     "FeatureItem5":{
       "heading":"Acesso e compatibilidade mais amplos",
       "item1":"Disponível no seu navegador favorito",
-      "description1":"A Inji Wallet funciona com Chrome, Safari, Firefox e Edge.",
+      "description1":"A e-Locker funciona com Chrome, Safari, Firefox e Edge.",
       "item2":"Sempre ao alcance",
       "description2":"A conveniência encontra a acessibilidade onde quer que você esteja, garantindo que seus documentos estejam sempre ao alcance."
     },
@@ -167,7 +167,7 @@
       "description1": "Credenciais verificáveis ​​são documentos digitais que ajudam os usuários a compartilhar informações como identidade ou qualificações com o provedor de serviços, que podem ser verificadas instantaneamente. Elas são emitidas por entidades confiáveis ​​e podem ser verificadas criptograficamente quanto à autenticidade. Essas credenciais agilizam os processos de verificação de identidade."
     },
     "item3": {
-      "title": "Como posso baixar uma credencial na Inji Wallet?",
+      "title": "Como posso baixar uma credencial na e-Locker?",
       "description1": "Etapa 1: Pesquise e escolha um Emissor na página de destino e selecione um tipo de credencial.",
       "description2": "Etapa 2: Na página de autenticação, forneça os detalhes necessários.",
       "description3": "Etapa 3: O formato PDF da credencial verificável será baixado no sistema."
@@ -192,7 +192,7 @@
       "description4": "Em ambos os casos, entre em contato com sua equipe técnica para resolver o problema."
     },
     "item8":{
-      "title": "O que acontece quando eu gero uma Credencial Verificável (VC) na Interface Web da Inji Wallet?",
+      "title": "O que acontece quando eu gero uma Credencial Verificável (VC) na Interface Web da e-Locker?",
       "description1":"1. Você seleciona um emissor e o tipo de credencial.",
       "description2":"2. Redireciona para a página de login do emissor para autenticação.",
       "description3":"3. Após o login, o emissor fornece a VC, armazenada com segurança como JSON usando Durian. ",
@@ -204,7 +204,7 @@
       "description1":"O código QR no PDF vincula-se à URL de armazenamento seguro da VC, facilitando a digitalização e a recuperação de credenciais sem dados densos."
     },
     "item10":{
-      "title":"Como a interface da Web da Inji Wallet garante que meu VC seja armazenado com segurança?",
+      "title":"Como a interface da Web da e-Locker garante que meu VC seja armazenado com segurança?",
       "description1":"Integra-se com o serviço Data Share (Durian) da plataforma MOSIP ID, armazenando o VC como um objeto JSON com acesso protegido apenas para verificadores autorizados."
     },
     "item11":{
@@ -212,7 +212,7 @@
       "description1":"1. O PDF do VC contém um código QR.",
       "description2":"2. O PDF pode ser impresso ou salvo em um telefone.",
       "description3":"3. O verificador (por exemplo, Inji Verify) escaneia o código QR.",
-      "description4":"4. A Inji Wallet autoriza e compartilha o VC com o verificador."
+      "description4":"4. A e-Locker autoriza e compartilha o VC com o verificador."
     },
     "item12":{
       "title":"Por que incorporar uma URL no código QR em vez de dados completos do VC?",
@@ -220,49 +220,49 @@
     },
     "item13":{
       "title":"Posso compartilhar meu VC on-line e off-line?",
-      "description1":"1. On-line: o verificador pode escanear de um PDF ou tela do telefone, e a Inji Wallet autoriza e compartilha o VC.",
+      "description1":"1. On-line: o verificador pode escanear de um PDF ou tela do telefone, e a e-Locker autoriza e compartilha o VC.",
       "description2":"2. Off-line: o PDF impresso pode ser apresentado para escaneamento e recuperação do VC."
     },
     "item14":{
-      "title":"Como a Inji Wallet verifica e autoriza o verificador durante o compartilhamento on-line?",
-      "description1":"As credenciais do verificador são verificadas em uma lista interna. Se autorizadas, a Inji Wallet com interface da web envia o VC de volta ao verificador com segurança usando um vp_token."
+      "title":"Como a e-Locker verifica e autoriza o verificador durante o compartilhamento on-line?",
+      "description1":"As credenciais do verificador são verificadas em uma lista interna. Se autorizadas, a e-Locker com interface da web envia o VC de volta ao verificador com segurança usando um vp_token."
     },
     "item15":{
-      "title":"O que é OpenID4VP e como ele é usado na Inji Wallet?",
-      "description1":"O padrão OpenID4VP (OpenID para apresentações verificáveis) permite o compartilhamento seguro de VCs. A Inji Wallet gera um código QR para armazenamento de VC, permitindo que verificadores como a Inji Verify solicitem e recebam VCs com segurança."
+      "title":"O que é OpenID4VP e como ele é usado na e-Locker?",
+      "description1":"O padrão OpenID4VP (OpenID para apresentações verificáveis) permite o compartilhamento seguro de VCs. A e-Locker gera um código QR para armazenamento de VC, permitindo que verificadores como a Inji Verify solicitem e recebam VCs com segurança."
     },
     "item16":{
-      "title":"Como sei que meu VC foi compartilhado com segurança usando a Inji Wallet??",
-      "description1":"Depois que o verificador escaneia o código QR e a Inji Wallet o autoriza, o VC é fornecido com segurança ao verificador, que então o valida e confirma."
+      "title":"Como sei que meu VC foi compartilhado com segurança usando a e-Locker??",
+      "description1":"Depois que o verificador escaneia o código QR e a e-Locker o autoriza, o VC é fornecido com segurança ao verificador, que então o valida e confirma."
     },
     "item17":{
       "title":"O que acontece se o código QR for escaneado em um dispositivo diferente daquele onde o VC foi gerado?",
-      "description1":"Suporta compartilhamento entre dispositivos. O verificador pode escanear qualquer cópia do PDF do VC, e a Inji Wallet verifica e compartilha o VC com segurança."
+      "description1":"Suporta compartilhamento entre dispositivos. O verificador pode escanear qualquer cópia do PDF do VC, e a e-Locker verifica e compartilha o VC com segurança."
     },
     "item18":{
-      "title":"A Inji Wallet suporta diferentes formatos de código QR?",
+      "title":"A e-Locker suporta diferentes formatos de código QR?",
       "description1":"Sim. A geração baseada em configuração permite que os códigos QR contenham: ",
       "description2":"1. URL para armazenamento de VC para fácil compartilhamento, ou ",
       "description3":"2. Dados completos de VC em JSON (formato mais denso)."
     },
     "item19":{
-      "title":"Como a Inji Wallet lida com a verificação de credenciais após o compartilhamento?",
+      "title":"Como a e-Locker lida com a verificação de credenciais após o compartilhamento?",
       "description1":"Após o compartilhamento, a Inji Verify verifica a autenticidade do VC. Se válido, o verificador confirma o status de verificação da credencial."
     },
     "item20":{
       "title":"Que tipo de emissores de credenciais são suportados?",
-      "description1":"Qualquer emissor que siga o protocolo OpenID4VCI pode ser confiável na Inji Wallet. Esses emissores fornecem os dados necessários para emitir e baixar VCs."
+      "description1":"Qualquer emissor que siga o protocolo OpenID4VCI pode ser confiável na e-Locker. Esses emissores fornecem os dados necessários para emitir e baixar VCs."
     },
     "item21": {
       "title": "Onde posso encontrar informações mais detalhadas sobre os recursos introduzidos nesta versão?",
-      "description1": "Consulte a <a href=\"https://docs.mosip.io/inji/inji-web/overview\" target=\"_blank\">documentação da Inji Wallet</a> para obter etapas detalhadas, visões gerais do sistema e descrições de novos recursos."
+      "description1": "Consulte a <a href=\"https://docs.mosip.io/inji/inji-web/overview\" target=\"_blank\">documentação da e-Locker</a> para obter etapas detalhadas, visões gerais do sistema e descrições de novos recursos."
     },
     "item22":{
-      "title":"Como começo a usar o recurso de compartilhamento online na Inji Wallet?",
-      "description1":"Acesse VCs pela interface da Web da Inji Wallet, baixe e use o código QR para compartilhar credenciais pessoalmente ou online com verificadores. Detalhes no <a href=\"https://docs.mosip.io/inji/inji-web/functional-overview/end-user-guide\" target=\"_blank\">guia do usuário</a>."
+      "title":"Como começo a usar o recurso de compartilhamento online na e-Locker?",
+      "description1":"Acesse VCs pela interface da Web da e-Locker, baixe e use o código QR para compartilhar credenciais pessoalmente ou online com verificadores. Detalhes no <a href=\"https://docs.mosip.io/inji/inji-web/functional-overview/end-user-guide\" target=\"_blank\">guia do usuário</a>."
     },
     "item23":{
-      "title":"Como posso alternar entre VC incorporado e compartilhamento online na Inji Wallet?",
+      "title":"Como posso alternar entre VC incorporado e compartilhamento online na e-Locker?",
       "description1":"Configurar qr_code_type nas configurações do emissor Mimoto: ",
       "description2":"1. EmbeddedVC: incorpora o VC completo no formato JSON (código QR mais denso) para uso offline.",
       "description3":"2. OnlineSharing: gera um código QR com uma URL para o armazenamento de VC online, facilitando a digitalização e o compartilhamento online."
