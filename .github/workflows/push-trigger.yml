@@ -15,16 +15,16 @@ jobs:
       matrix:
         include:
           - SERVICE_LOCATION: "inji-web"
-            SERVICE_NAME: "inji-web"
+            BUILD_ARTIFACT: "inji-web"
       fail-fast: false
 
-    name: ${{ matrix.SERVICE_NAME }}
+    name: Build ${{ matrix.BUILD_ARTIFACT }}
 
     uses: iiitb-pilot/kattu/.github/workflows/maven-build.yml@master
 
     with:
       SERVICE_LOCATION: ${{ matrix.SERVICE_LOCATION }}
-      SERVICE_NAME: ${{ matrix.SERVICE_NAME }}
+      BUILD_ARTIFACT: ${{ matrix.BUILD_ARTIFACT }}
 
     secrets:
       DEV_NAMESPACE_DOCKER_HUB: ${{ secrets.DEV_NAMESPACE_DOCKER_HUB }}
