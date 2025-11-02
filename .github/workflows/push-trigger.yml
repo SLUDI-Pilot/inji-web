@@ -17,7 +17,7 @@ jobs:
             SERVICE_NAME: "inji-web"
       fail-fast: false
     name: ${{ matrix.SERVICE_NAME }}
-    uses: iiitb-pilot/kattu/.github/workflows/maven-build.yml@master
+    uses: iiitb-pilot/kattu/.github/workflows/docker-build.yml@master
     with:
       SERVICE_LOCATION: ${{ matrix.SERVICE_LOCATION }}
       SERVICE_NAME: ${{ matrix.SERVICE_NAME }}
@@ -55,3 +55,4 @@ jobs:
       - name: Build the project
         run: npm run build
         working-directory: inji-web
+
