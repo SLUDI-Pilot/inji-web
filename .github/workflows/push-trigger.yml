@@ -2,9 +2,9 @@ name: inji-web build upon a push ui
 
 on:
   release:
-    types: [ published ]
+    types: [published]
   pull_request:
-    types: [ opened, reopened, synchronize ]
+    types: [opened, reopened, synchronize]
   push:
     branches:
       - sdec-0.12.0
@@ -17,11 +17,15 @@ jobs:
           - SERVICE_LOCATION: "inji-web"
             SERVICE_NAME: "inji-web"
       fail-fast: false
+
     name: ${{ matrix.SERVICE_NAME }}
+
     uses: iiitb-pilot/kattu/.github/workflows/maven-build.yml@master
+
     with:
       SERVICE_LOCATION: ${{ matrix.SERVICE_LOCATION }}
       SERVICE_NAME: ${{ matrix.SERVICE_NAME }}
+
     secrets:
       DEV_NAMESPACE_DOCKER_HUB: ${{ secrets.DEV_NAMESPACE_DOCKER_HUB }}
       ACTOR_DOCKER_HUB: ${{ secrets.ACTOR_DOCKER_HUB }}
