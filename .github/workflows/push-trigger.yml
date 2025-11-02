@@ -1,13 +1,7 @@
 name: inji-web build upon a push ui
 
 on:
-  release:
-    types: [published]
-  pull_request:
-    types: [opened, reopened, synchronize]
-  push:
-    branches:
-      - sdec-0.12.0
+  workflow_dispatch:
 
 jobs:
   build-dockers-inji-web:
@@ -17,15 +11,11 @@ jobs:
           - SERVICE_LOCATION: "inji-web"
             BUILD_ARTIFACT: "inji-web"
       fail-fast: false
-
-    name: Build ${{ matrix.BUILD_ARTIFACT }}
-
-    uses: iiitb-pilot/kattu/.github/workflows/maven-build.yml@master
-
+    name: Build Docker ${{ matrix.SERVICE_NAME }}
+    uses: iiitb-pilot/kattu/.github/workflows/docker-build.yml@master
     with:
       SERVICE_LOCATION: ${{ matrix.SERVICE_LOCATION }}
-      BUILD_ARTIFACT: ${{ matrix.BUILD_ARTIFACT }}
-
+      SERVICE_NAME: ${{ matrix.SERVICE_NAME }}
     secrets:
       DEV_NAMESPACE_DOCKER_HUB: ${{ secrets.DEV_NAMESPACE_DOCKER_HUB }}
       ACTOR_DOCKER_HUB: ${{ secrets.ACTOR_DOCKER_HUB }}
