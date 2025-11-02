@@ -2,6 +2,11 @@ name: inji-web build upon a push ui
 
 on:
   workflow_dispatch:
+  pull_request:
+    types: [ opened, reopened, synchronize ]
+  push:
+    branches:
+      - 'sdec-0.12.0'
 
 jobs:
   build-dockers-inji-web:
@@ -10,18 +15,43 @@ jobs:
         include:
           - SERVICE_LOCATION: "inji-web"
             SERVICE_NAME: "inji-web"
-            BUILD_ARTIFACT: "inji-web"
       fail-fast: false
-
-    name: Build Docker ${{ matrix.SERVICE_NAME }}
-    uses: iiitb-pilot/kattu/.github/workflows/docker-build.yml@master
+    name: ${{ matrix.SERVICE_NAME }}
+    uses: mosip/kattu/.github/workflows/docker-build.yml@master
     with:
       SERVICE_LOCATION: ${{ matrix.SERVICE_LOCATION }}
       SERVICE_NAME: ${{ matrix.SERVICE_NAME }}
-      BUILD_ARTIFACT: ${{ matrix.BUILD_ARTIFACT }}
-
     secrets:
       DEV_NAMESPACE_DOCKER_HUB: ${{ secrets.DEV_NAMESPACE_DOCKER_HUB }}
       ACTOR_DOCKER_HUB: ${{ secrets.ACTOR_DOCKER_HUB }}
       RELEASE_DOCKER_HUB: ${{ secrets.RELEASE_DOCKER_HUB }}
-      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
+
+  build-inji-web:
+    runs-on: ubuntu-latest
+    env:
+      NAMESPACE: ${{ secrets.dev_namespace_docker_hub }}
+      SERVICE_NAME: ui-test
+      SERVICE_LOCATION: ui-test
+      BUILD_ARTIFACT: ui-test-local
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3.7.0
+        with:
+          node-version: '18'
+      - name: Cache npm dependencies
+        uses: actions/cache@v4
+        with:
+          path: '~/.npm'
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-
+      - name: Install the dependencies
+        run: npm install
+        working-directory: inji-web
+      - name: Run unit tests with coverage
+        run: npm test -- --coverage
+        working-directory: inji-web
+      - name: Build the project
+        run: npm run build
+        working-directory: inji-web
