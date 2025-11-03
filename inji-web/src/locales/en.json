@@ -216,10 +216,10 @@
       "description1":"Integrates with the Data Share service (Durian) from the MOSIP ID platform, storing the VC as a JSON object with access protected for only authorized verifiers."
     },
     "item11":{
-      "title":"How does the online sharing feature work with Inji Verify?",
+      "title":"How does the online sharing feature work with e-Locker Verify?",
       "description1":"1. VC PDF contains a QR code.",
       "description2":"2. PDF can be printed or saved on a phone. ",
-      "description3":"3. Verifier (e.g., Inji Verify) scans the QR code. ",
+      "description3":"3. Verifier (e.g., e-Locker Verify) scans the QR code. ",
       "description4":"4. e-Locker authorizes and shares the VC with the verifier."
     },
     "item12":{
@@ -237,7 +237,7 @@
     },
     "item15":{
       "title":"What is OpenID4VP, and how is it used in e-Locker?",
-      "description1":"OpenID4VP (OpenID for Verifiable Presentations) standard allows secure sharing of VCs. e-Locker generates a QR code for VC storage, enabling verifiers like Inji Verify to securely request and receive VCs."
+      "description1":"OpenID4VP (OpenID for Verifiable Presentations) standard allows secure sharing of VCs. e-Locker generates a QR code for VC storage, enabling verifiers like e-Locker Verify to securely request and receive VCs."
     },
     "item16":{
       "title":"How do I know my VC was securely shared using e-Locker??",
@@ -255,7 +255,7 @@
     },
     "item19":{
       "title":"How does e-Locker handle credential verification after sharing?",
-      "description1":"After sharing, Inji Verify checks VC authenticity. If valid, the verifier confirms the credential's verification status."
+      "description1":"After sharing, e-Locker Verify checks VC authenticity. If valid, the verifier confirms the credential's verification status."
     },
     "item20":{
       "title":"What kind of credential issuers are supported?",
@@ -263,11 +263,11 @@
     },
     "item21": {
       "title": "Where can I find more detailed information about the features introduced in this release?",
-      "description1": "Refer to the <a href=\"https://docs.mosip.io/inji/inji-web/overview\" target=\"_blank\">e-Locker documentation</a> for detailed steps, system overviews, and descriptions of new features."
+      "description1": "Refer to the <a href=\"https://docs.mosip.io/e-Locker/e-Locker-web/overview\" target=\"_blank\">e-Locker documentation</a> for detailed steps, system overviews, and descriptions of new features."
     },
     "item22":{
       "title":"How do I get started with the online sharing feature in e-Locker?",
-      "description1":"Access VCs via e-Locker’s Web Interface, download, and use the QR code to share credentials in person or online with verifiers. Details in the <a href=\"https://docs.mosip.io/inji/inji-web/functional-overview/end-user-guide\" target=\"_blank\"> user guide </a> ."
+      "description1":"Access VCs via e-Locker’s Web Interface, download, and use the QR code to share credentials in person or online with verifiers. Details in the <a href=\"https://docs.mosip.io/e-Locker/e-Locker-web/functional-overview/end-user-guide\" target=\"_blank\"> user guide </a> ."
     },
     "item23":{
       "title":"How can I toggle between embedded VC and Online Sharing in e-Locker?",
