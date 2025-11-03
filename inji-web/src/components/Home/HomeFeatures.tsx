@@ -17,7 +17,7 @@ export const HomeFeatures: React.FC = () => {
   const handlePrev = () => {
     setCurrentFeature((prev) => (prev - 1 + totalFeatures) % totalFeatures);
   };
-
+ 
   return (
     <div data-testid="HomeFeatures-Container" className="flex justify-center items-center flex-col">
       <div data-testid="HomeFeatures-Heading" className="font-semibold text-3xl m-5">
